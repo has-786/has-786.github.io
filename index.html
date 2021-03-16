@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyResume Bootstrap Template - Index</title>
+  <title>Tech Syed</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/profile-img.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -39,16 +39,12 @@
     const message=document.getElementById('message')?.value
 
     const data={name,email,subject,message}
-    alert(JSON.stringify(data))
     document.getElementById('loader').style.opacity=1;
 
     fetch('https://hasly.herokuapp.com/portfolioEmail',{ method: 'POST', body:JSON.stringify(data), headers: {"Content-Type": "application/json" } })
     .then(response=>{return response.json()})
-    .then((body)=>{alert(JSON.stringify(body)); if(body.status==1)alert("Mail was sent successfully"); else alert("Something went wrong");  document.getElementById('loader').style.opacity=0;  })
-    .catch(err=>{  alert("Something went wrong "+err);  document.getElementById('loader').style.opacity=0;   console.log(err); })
-
-			
-   
+    .then((body)=>{  if(body.status==1)alert("Mail was sent successfully"); else alert("Something went wrong");  document.getElementById('loader').style.opacity=0;  })
+    .catch(err=>{ alert("Something went wrong "+err);  document.getElementById('loader').style.opacity=0;   console.log(err); })
   } 
 </script>
 
@@ -63,7 +59,7 @@
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <!--<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>-->
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
