@@ -1,0 +1,70 @@
+ARS -> Request generate and track
+
+Admin-> Users, Accounts
+
+Users -> Users details 
+Accounts -> Target application accounts 
+
+
+Users infos are coming from HR system through trusted reconcillation
+
+samaccountname -> id of account
+
+Accounts have entitlements associated
+
+Roles 
+User groups 
+Security Systems -> for connecting to target application
+
+Create new account
+Request gets submitted
+Check Tasks
+Check in the Job, search for provision
+Run Job
+Task completed 
+New account created
+
+
+--------
+
+Change Password--> Admin Functions
+
+--------
+
+Connections --> Cofigure connections
+Security Systems --> Using connections configure them
+Endpoints --> Configure multiple endpoints for security systems
+
+Connections are used to reconcile and provisioning from target application
+Create account in the target system
+
+
+---------
+
+Policies and SAV roles
+
+Policies are used to trigger some operation to the target application 
+Like: when user is created or updated, certain provisioning should be done to the target application.
+
+SAV roles
+Roles are the things which gives the user the certain permissions
+
+---------
+
+Email Templates:
+
+For sending Email notifications upon completion of certain task.
+Like: after creation of account etc.
+
+
+Reports/Analytics:
+
+
+
+
+
+
+
+
+
+
